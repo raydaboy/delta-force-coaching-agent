@@ -1,0 +1,11 @@
+{
+  "recipe_id": "example_fight_26_review",
+  "scenes": [
+    {"scene_id":"s01","kind":"live_action","start":0,"duration":70,"claim_class":"observed","source_times":[3906,3982],"evidence_refs":["fight_26"]},
+    {"scene_id":"s02","kind":"consequence","start":70,"duration":8,"claim_class":"observed","source_times":[3982,3990],"evidence_refs":["fight_26"]},
+    {"scene_id":"s03","kind":"question","start":78,"duration":6,"claim_class":"production","source_times":[3982.3],"evidence_refs":["fight_26"],"question":"What kept the squad split after the first target?","thinking_window_seconds":3},
+    {"scene_id":"s04","kind":"evidence_panel","start":84,"duration":14,"claim_class":"observed","source_times":[3912,3982],"evidence_refs":["fight_26"],"observed_text":"Height and target order are visible in the exchange.","inferred_text":"The separation likely gave more time to aim.","unknown_text":"Hidden teammates and enemy intent are unknown."},
+    {"scene_id":"s05","kind":"alternative_compare","start":98,"duration":22,"claim_class":"inference","source_times":[3982.3],"evidence_refs":["fight_26"],"original_action":"Expose for the next target from the same lane.","alternative_action":"Stay elevated and change the angle before the next exposure.","tradeoff":"The finish may be slower, but the targets remain separated.","unknowns":["A hidden angle could change the result."]},
+    {"scene_id":"s06","kind":"drill","start":120,"duration":10,"claim_class":"production","source_times":[],"evidence_refs":[],"success_condition":"After each down, change cover or angle before exposing to the next target."}
+  ]
+}

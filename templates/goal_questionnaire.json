@@ -1,0 +1,47 @@
+{
+  "questionnaire_id": "goal_questionnaire_v1",
+  "questions": [
+    {
+      "id": "primary_goal",
+      "prompt": "What is the main thing you want from this match or session?",
+      "type": "single_choice_or_free_text",
+      "examples": ["extract with valuable loot", "win fights", "complete an objective", "improve mechanics"]
+    },
+    {
+      "id": "secondary_goals",
+      "prompt": "Which other goals matter, and how should they rank below the primary goal?",
+      "type": "ordered_multi_select",
+      "examples": ["win forced fights", "movement", "positioning", "aim", "loot speed"]
+    },
+    {
+      "id": "forced_fight_definition",
+      "prompt": "When should the coach treat a fight as necessary rather than optional?",
+      "type": "multi_select_or_free_text",
+      "examples": ["enemy threatens valuable loot", "enemy threatens my position", "enemy is close enough to attack", "objective cannot be completed without fighting"]
+    },
+    {
+      "id": "engagement_policy",
+      "prompt": "Do you want to hunt fights, avoid optional fights, or fight only when they come to you?",
+      "type": "choice",
+      "options": ["hunt fights", "avoid optional fights", "fight when a nearby threat forces it", "situation dependent"]
+    },
+    {
+      "id": "unfavorable_fight_policy",
+      "prompt": "When a forced fight becomes unfavorable, what should the coach prefer?",
+      "type": "choice",
+      "options": ["disengage to protect the goal", "take one safe exchange then retreat", "commit fully", "situation dependent"]
+    },
+    {
+      "id": "language_level",
+      "prompt": "How technical should the coaching language be?",
+      "type": "choice",
+      "options": ["simple game language", "intermediate", "advanced"]
+    }
+  ],
+  "persistence_contract": {
+    "write_to": "goal_record.json",
+    "never_infer_without_label": true,
+    "allow_unresolved_answers": true,
+    "default_unfavorable_policy": "take one safe exchange then retreat when damage or lost position threatens extraction"
+  }
+}

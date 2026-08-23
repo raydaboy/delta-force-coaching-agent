@@ -1,0 +1,10 @@
+{
+  "episode_id": "example_goal_review",
+  "beats": [
+    {"beat_id":"b01","kind":"cold_open","claim_class":"production","source_times":[3906,3912],"evidence_refs":[],"text":"Watch the action first."},
+    {"beat_id":"b02","kind":"question","claim_class":"production","source_times":[3982.3],"evidence_refs":["fight_26"],"question":"What kept the squad split after the first target?","answerable_from_visible_evidence":true,"thinking_window_seconds":3},
+    {"beat_id":"b03","kind":"reveal","claim_class":"observed","source_times":[3912,3982],"evidence_refs":["fight_26"],"observed_claims":["The player holds height and solves targets in sequence."],"inference_claims":["This likely preserved more time to aim."],"unknowns":["Unseen enemy intent is unknown."]},
+    {"beat_id":"b04","kind":"alternative","claim_class":"inference","source_times":[3982.3],"evidence_refs":["fight_26"],"original_action":"Expose for the next target from the same lane.","better_action":"Stay on the elevated platform and change the angle before the next exposure.","tradeoff":"This may slow the finish but preserves separation.","likely_benefit":"More time to aim while protecting the loot route.","unknowns":["A hidden teammate could change the result."],"confidence":0.7},
+    {"beat_id":"b05","kind":"drill","claim_class":"production","source_times":[],"evidence_refs":[],"success_condition":"After each down, change cover or angle before exposing to the next target.","text":"One-target lane drill."}
+  ]
+}

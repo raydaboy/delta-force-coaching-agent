@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "",
+    "source": "",
+    "resolution": "landscape",
+    "fps": 30
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "kind": "live_action",
+      "start": 0,
+      "duration": 0,
+      "source_times": [],
+      "asset_refs": [],
+      "spoken_text": "",
+      "claim_class": "observed",
+      "evidence_refs": [],
+      "audio": {"gameplay": 1.0, "narration": 0.0, "duck_db": 0},
+      "annotations": [],
+      "unknowns": []
+    },
+    {
+      "scene_id": "scene_question_01",
+      "kind": "question",
+      "start": 0,
+      "duration": 0,
+      "source_times": [],
+      "asset_refs": [],
+      "spoken_text": "",
+      "question": "",
+      "thinking_window_seconds": 3,
+      "claim_class": "production",
+      "evidence_refs": [],
+      "audio": {"gameplay": 0.2, "narration": 1.0, "duck_db": -12},
+      "annotations": [],
+      "unknowns": []
+    }
+  ],
+  "finishing": {
+    "normalization_lufs": -16,
+    "true_peak_db": -1.5,
+    "codec": "h264/aac",
+    "notes": ""
+  }
+}

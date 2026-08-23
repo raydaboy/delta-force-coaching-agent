@@ -1,0 +1,54 @@
+{
+  "questionnaire_id": "player_profile_v1",
+  "purpose": "Calibrate coaching depth and language without using background as evidence of what happened in the current recording.",
+  "questions": [
+    {
+      "id": "display_name",
+      "prompt": "What should the coach call you?",
+      "type": "short_text",
+      "required": false,
+      "privacy_note": "A nickname is enough."
+    },
+    {
+      "id": "current_game",
+      "prompt": "Which game are we coaching today, and which mode or operator do you usually play?",
+      "type": "text"
+    },
+    {
+      "id": "games_played",
+      "prompt": "What other games have you played that might share skills with this one?",
+      "type": "repeatable_group",
+      "fields": ["title", "time_played", "roles_or_loadouts", "familiarity", "skills_you_feel_transfer"]
+    },
+    {
+      "id": "current_game_proficiency",
+      "prompt": "How experienced do you feel in the current game?",
+      "type": "group",
+      "fields": ["self_rating", "hours_or_matches", "rank_or_bracket", "confidence_by_skill"]
+    },
+    {
+      "id": "goals_by_skill",
+      "prompt": "Which parts of your play do you most want to improve?",
+      "type": "ordered_multi_select",
+      "options": ["loot and extraction decisions", "fight selection", "movement", "positioning", "aim", "recoil control", "audio awareness", "healing and resets", "team play"]
+    },
+    {
+      "id": "teaching_preferences",
+      "prompt": "How should the coach explain things?",
+      "type": "group",
+      "fields": ["language_level", "preferred_examples", "wants_enemy_perspective", "wants_question_first_review", "review_depth"]
+    },
+    {
+      "id": "privacy",
+      "prompt": "Should this profile persist across sessions or be deleted after the run?",
+      "type": "group",
+      "fields": ["persist_profile", "share_with_external_services", "delete_after_run"]
+    }
+  ],
+  "calibration_rules": [
+    "Use the profile to choose vocabulary, analogy difficulty, review length, and drill complexity.",
+    "Do not use game history or self-rated proficiency to override current-video evidence.",
+    "If self-rating and observed play differ, describe the difference as a coaching hypothesis and ask for confirmation.",
+    "Never infer age, identity, health, or ability from game history or recording performance."
+  ]
+}

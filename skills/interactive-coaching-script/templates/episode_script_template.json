@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "",
+    "source": "",
+    "duration": 0,
+    "audience": "player",
+    "tone": "direct, evidence-backed, encouraging"
+  },
+  "opening": {
+    "spoken_text": "",
+    "evidence_refs": []
+  },
+  "beats": [
+    {
+      "beat_id": "beat_01",
+      "kind": "cold_open",
+      "source_times": [],
+      "claim_class": "observed",
+      "spoken_text": "",
+      "visual_plan": ["live_clip", "consequence"],
+      "evidence_refs": [],
+      "pause_seconds": 0,
+      "uncertainty": [],
+      "transition": ""
+    },
+    {
+      "beat_id": "beat_02",
+      "kind": "question",
+      "source_times": [],
+      "claim_class": "production",
+      "question": "",
+      "answerable_from_visible_evidence": true,
+      "thinking_window_seconds": 3,
+      "spoken_text": "",
+      "visual_plan": ["freeze_frame", "question_card"],
+      "evidence_refs": [],
+      "pause_seconds": 3,
+      "uncertainty": [],
+      "transition": "rewind"
+    }
+  ],
+  "scorecard": {
+    "strengths": [],
+    "priority_corrections": [],
+    "confidence_notes": [],
+    "unresolved_questions": [],
+    "next_session_focus": []
+  },
+  "drills": [],
+  "evidence_ledger": [],
+  "unknowns": []
+}

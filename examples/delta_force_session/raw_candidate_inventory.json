@@ -1,0 +1,1248 @@
+{
+  "source": {
+    "path": "/home/ubuntu/upload/Screen_Recording_20260822_140704_compress.mp4",
+    "duration_seconds": 5002.266667,
+    "resolution": "392x178",
+    "fps": 30,
+    "audio": "AAC stereo 48 kHz",
+    "game": "Delta Force Mobile",
+    "map": "primarily Zero Dam",
+    "source_limitations": [
+      "compressed ultrawide gameplay canvas",
+      "some enemy intent and off-screen positions remain unknown",
+      "chunked multimodal analysis is used as candidate evidence and must not override visible continuity"
+    ]
+  },
+  "player_goal": {
+    "primary": "Extract safely with valuable loot.",
+    "secondary": "Win fights when a nearby enemy threatens valuable loot or the player is already in close danger.",
+    "supporting": [
+      "Improve movement.",
+      "Improve positioning.",
+      "Improve aiming."
+    ],
+    "fight_policy": "Do not hunt unnecessary fights, but commit to winning a forced close-range fight when an enemy comes knocking; judge the decision by whether it protects the loot objective and preserves a realistic escape option.",
+    "coaching_question": "Did this action increase the chance of extracting with the loot, and if the fight was forced, did the player create the safest path to win it?"
+  },
+  "events": [
+    {
+      "event_id": "cand_01_setup",
+      "start": 0,
+      "end": 39,
+      "type_guess": "setup",
+      "summary": "Cinematic insertion, map review, roping, and weapon check.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "movement",
+          "strength": 0.8,
+          "claim": "Cinematic insertion, map review, roping, and weapon check."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_02_grass_travel",
+      "start": 39,
+      "end": 68,
+      "type_guess": "movement",
+      "summary": "Travel through grass and along perimeter walls.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "movement",
+          "strength": 0.8,
+          "claim": "Travel through grass and along perimeter walls."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_03_gunshots_contact",
+      "start": 68,
+      "end": 70,
+      "type_guess": "contact",
+      "summary": "Gunshots heard before direct exchange.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "live_enemy",
+          "strength": 0.8,
+          "claim": "Gunshots heard before direct exchange."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.7,
+          "claim": "Live target or gunshot contact without interaction-plus-consequence."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_01_combat",
+      "start": 70.0,
+      "end": 73.0,
+      "type_guess": "combat",
+      "summary": "First contact from cover: return fire without chasing an uncertain result.",
+      "location_id": "Cement Plant industrial containers",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Heard shots and saw an enemy near containers."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: escaped_or_suppressed."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_02_combat",
+      "start": 81.0,
+      "end": 90.0,
+      "type_guess": "combat",
+      "summary": "Use the wall as a firing base, then leave the line after the burst.",
+      "location_id": "Cement Plant blue wall",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an enemy behind the wall before firing."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: escaped_or_suppressed."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_03_combat",
+      "start": 97.0,
+      "end": 99.0,
+      "type_guess": "combat",
+      "summary": "At a stair choke point, expose only enough to take the first shot.",
+      "location_id": "Facility stairs",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Enemy was waiting at the top of the stairs."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: escaped_or_suppressed."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_04_window_contact",
+      "start": 106,
+      "end": 110,
+      "type_guess": "contact",
+      "summary": "Enemy movement visible through a window.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "live_enemy",
+          "strength": 0.8,
+          "claim": "Enemy movement visible through a window."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.7,
+          "claim": "Live target or gunshot contact without interaction-plus-consequence."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_05_tunnel_sightings",
+      "start": 116,
+      "end": 132,
+      "type_guess": "contact",
+      "summary": "Several tunnel sightings without confirmed exchange.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "live_enemy",
+          "strength": 0.8,
+          "claim": "Several tunnel sightings without confirmed exchange."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.7,
+          "claim": "Live target or gunshot contact without interaction-plus-consequence."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_04_combat",
+      "start": 141.0,
+      "end": 144.0,
+      "type_guess": "combat",
+      "summary": "When loot is not yet secured and the first trade is bad, break the line before trying to win it back.",
+      "location_id": "Exterior yard near yellow loader",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Was caught in the open and took significant damage."
+        },
+        {
+          "kind": "retreat_after_damage",
+          "strength": 0.95,
+          "claim": "Visible consequence: injured_retreat."
+        },
+        {
+          "kind": "loss_of_contact_after_exchange",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_05_combat",
+      "start": 166.0,
+      "end": 169.0,
+      "type_guess": "combat",
+      "summary": "Use the crate edge to shorten the enemy\u2019s view instead of taking the whole open lane.",
+      "location_id": "Container yard crates",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw the enemy on high ground while moving behind cover."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: escaped_or_suppressed."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_06_combat",
+      "start": 174.0,
+      "end": 189.0,
+      "type_guess": "combat",
+      "summary": "A forced close fight needs a nearby exit; do not spend the whole fight trapped between containers.",
+      "location_id": "Container yard close quarters",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Was ambushed at close range and exposed to enemy fire or gadgets."
+        },
+        {
+          "kind": "player_death",
+          "strength": 0.95,
+          "claim": "Visible consequence: lost."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_06_menus_01",
+      "start": 208,
+      "end": 483,
+      "type_guess": "menu",
+      "summary": "Lobby, loadout, rewards, and upgrade screens.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "menu",
+          "strength": 0.8,
+          "claim": "Lobby, loadout, rewards, and upgrade screens."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_07_visitor_loot",
+      "start": 558,
+      "end": 593,
+      "type_guess": "loot",
+      "summary": "Briefcase, med kit, and building search.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "loot",
+          "strength": 0.8,
+          "claim": "Briefcase, med kit, and building search."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_07_combat",
+      "start": 628.0,
+      "end": 630.0,
+      "type_guess": "combat",
+      "summary": "The knife commit worked because the target was isolated; do not copy it when a second threat can see the entry.",
+      "location_id": "Visitor Center office doorway",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw the red-bandana enemy through the doorway."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_08_doorway_peek",
+      "start": 690,
+      "end": 704,
+      "type_guess": "peek",
+      "summary": "Held a doorway angle without shots.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "peek",
+          "strength": 0.8,
+          "claim": "Held a doorway angle without shots."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_08_combat",
+      "start": 731.0,
+      "end": 733.0,
+      "type_guess": "combat",
+      "summary": "Close distance only after confirming the target is alone and the route is short.",
+      "location_id": "Visitor Center central hall",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an isolated enemy in the open hall."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_09_combat",
+      "start": 761.0,
+      "end": 762.0,
+      "type_guess": "combat",
+      "summary": "Against a shield, close from the side only when the corner prevents a second enemy from helping.",
+      "location_id": "Visitor Center upper hallway",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw a shield-bearing enemy around the corner."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_09_roof_contact",
+      "start": 830,
+      "end": 835,
+      "type_guess": "contact",
+      "summary": "Enemies visible below from roof; no exchange yet.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "live_enemy",
+          "strength": 0.8,
+          "claim": "Enemies visible below from roof; no exchange yet."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.7,
+          "claim": "Live target or gunshot contact without interaction-plus-consequence."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_10_combat",
+      "start": 964.0,
+      "end": 974.0,
+      "type_guess": "combat",
+      "summary": "A visible target is not automatically a safe target; keep a retreat route before opening from a roof.",
+      "location_id": "Visitor Center roof",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw enemies below from the roof and had a long-range line."
+        },
+        {
+          "kind": "player_death",
+          "strength": 0.95,
+          "claim": "Visible consequence: lost."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_10_menu_02",
+      "start": 1015,
+      "end": 1110,
+      "type_guess": "menu",
+      "summary": "Lobby and deployment setup.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "menu",
+          "strength": 0.8,
+          "claim": "Lobby and deployment setup."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_11_combat",
+      "start": 1254.0,
+      "end": 1290.0,
+      "type_guess": "combat",
+      "summary": "When one target becomes several, stop trying to finish the first target and move to a position that cuts the group apart.",
+      "location_id": "Cement Plant building near tunnel",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Initially saw one enemy, then faced multiple threats and tactical pressure."
+        },
+        {
+          "kind": "player_death",
+          "strength": 0.95,
+          "claim": "Visible consequence: lost."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_12_combat",
+      "start": 1754.0,
+      "end": 1762.0,
+      "type_guess": "combat",
+      "summary": "The knife worked because the enemy was already inside the danger distance; make the decision quickly, then leave the body area.",
+      "location_id": "Building interior near Cement Plant",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Detected an enemy inside the same room at close range."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_11_long_peek",
+      "start": 1902,
+      "end": 1994,
+      "type_guess": "peek",
+      "summary": "Long-range observation and aiming without confirmed combat.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "peek",
+          "strength": 0.8,
+          "claim": "Long-range observation and aiming without confirmed combat."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_14_menu_03",
+      "start": 1932,
+      "end": 2050,
+      "type_guess": "menu",
+      "summary": "Settings and loadout interaction.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "menu",
+          "strength": 0.8,
+          "claim": "Settings and loadout interaction."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_12_explosion_heal",
+      "start": 1994,
+      "end": 2016,
+      "type_guess": "recovery",
+      "summary": "Explosion damage followed by healing; no live-target exchange visible.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "recovery",
+          "strength": 0.8,
+          "claim": "Explosion damage followed by healing; no live-target exchange visible."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_13_tool_loot",
+      "start": 2027,
+      "end": 2043,
+      "type_guess": "loot",
+      "summary": "Tool cabinet and safe box interaction.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "loot",
+          "strength": 0.8,
+          "claim": "Tool cabinet and safe box interaction."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_13_combat",
+      "start": 2156.0,
+      "end": 2167.0,
+      "type_guess": "combat",
+      "summary": "After unexpected damage, use the first hard cover, finish the nearest threat, and do not let the next target choose the range.",
+      "location_id": "Hallway after fire trap",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Heard enemies near the ladder and was hit by a trap or grenade before the exchange."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won_cluster."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_15_death_crate",
+      "start": 2180,
+      "end": 2235,
+      "type_guess": "death_crate",
+      "summary": "Searching fallen enemy chest rig and containers after combat.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "death_crate",
+          "strength": 0.8,
+          "claim": "Searching fallen enemy chest rig and containers after combat."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_16_protocol_loot",
+      "start": 2301,
+      "end": 2310,
+      "type_guess": "loot",
+      "summary": "Protocol crate interaction before later contact.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "loot",
+          "strength": 0.8,
+          "claim": "Protocol crate interaction before later contact."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_14_combat",
+      "start": 2333.0,
+      "end": 2394.0,
+      "type_guess": "combat",
+      "summary": "This is one sustained pressure episode, not four separate fights: break contact when debuffed, heal only when the enemy cannot reach you, and keep a landing as the fallback.",
+      "location_id": "Doorway, hallway, and stairs",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Was debuffed, then pressured through several connected positions."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won_or_knockdown_cluster."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_15_combat",
+      "start": 2458.0,
+      "end": 2460.0,
+      "type_guess": "combat",
+      "summary": "The height advantage helped; land the first burst before moving, rather than trying to repair a missed opening while exposed.",
+      "location_id": "Cement Plant stairs after zipline",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an enemy below while dropping from above."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_16_combat",
+      "start": 2477.0,
+      "end": 2502.0,
+      "type_guess": "combat",
+      "summary": "When loot gets you attacked, stop sorting immediately, use the nearest cover, and solve the closest shooter first.",
+      "location_id": "Cement Plant interior ambush",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Was attacked while vulnerable during looting and returned fire."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won_cluster."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_17_combat",
+      "start": 2815.0,
+      "end": 2817.0,
+      "type_guess": "combat",
+      "summary": "The smoke created the safe approach; the key is using it to end the exposure quickly, not to wander deeper.",
+      "location_id": "Major Substation cave exit",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an isolated enemy and used smoke to close distance."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_18_combat",
+      "start": 2835.0,
+      "end": 2839.0,
+      "type_guess": "combat",
+      "summary": "A quiet finish is valuable when it keeps the route safe, but only while the target is truly isolated.",
+      "location_id": "Major Substation exterior",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an isolated guard while moving through the substation."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_19_combat",
+      "start": 2920.0,
+      "end": 2929.0,
+      "type_guess": "combat",
+      "summary": "Aggression works here because the targets are split; check whether the next target has a clear gun line before chaining the push.",
+      "location_id": "Major Substation yard",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Entered a yard with multiple guards and used aggressive movement to close distance."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won_cluster."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_20_combat",
+      "start": 2950.0,
+      "end": 2952.0,
+      "type_guess": "combat",
+      "summary": "Use the distraction, but keep the next move pointed toward cover rather than toward the crate.",
+      "location_id": "Major Substation perimeter",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw a distracted guard behind cover."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_21_combat",
+      "start": 3101.0,
+      "end": 3107.0,
+      "type_guess": "combat",
+      "summary": "The close-range commit was justified by surprise; after the kill, heal and leave instead of turning the win into a loot pause.",
+      "location_id": "Visitor Center grass near rock",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Had surprise on a nearby red-clad enemy while moving through grass."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_17_menu_04",
+      "start": 3211,
+      "end": 3328,
+      "type_guess": "menu",
+      "summary": "Lobby and matchmaking screens.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "menu",
+          "strength": 0.8,
+          "claim": "Lobby and matchmaking screens."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_18_travel_loot",
+      "start": 3328,
+      "end": 3448,
+      "type_guess": "movement",
+      "summary": "Travel and routine loot with no exchange.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "movement",
+          "strength": 0.8,
+          "claim": "Travel and routine loot with no exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_22_combat",
+      "start": 3454.0,
+      "end": 3459.0,
+      "type_guess": "combat",
+      "summary": "The ranged-to-knife finish was efficient because the target was already weakened and alone; do not force the knife opening against a fresh target.",
+      "location_id": "Industrial container yard",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Had a clear line on one isolated guard."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_19_settings",
+      "start": 3550,
+      "end": 3565,
+      "type_guess": "inventory_screen",
+      "summary": "Settings and inventory adjustment.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "inventory_screen",
+          "strength": 0.8,
+          "claim": "Settings and inventory adjustment."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_23_combat",
+      "start": 3603.0,
+      "end": 3606.0,
+      "type_guess": "combat",
+      "summary": "The emergency knife draw saved the close-range moment; the improvement is moving toward a corner before returning to loot.",
+      "location_id": "Container yard surprise contact",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Was looting when an enemy appeared at the container corner."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_24_combat",
+      "start": 3811.0,
+      "end": 3813.0,
+      "type_guess": "combat",
+      "summary": "This is a successful survival decision: break the line first, heal second, and do not chase a fight that threatens the extraction goal.",
+      "location_id": "Container yard hidden enemy",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Took damage from a hidden enemy and knew the direction but was out of position."
+        },
+        {
+          "kind": "retreat_after_damage",
+          "strength": 0.95,
+          "claim": "Visible consequence: escaped."
+        },
+        {
+          "kind": "loss_of_contact_after_exchange",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_25_combat",
+      "start": 3873.0,
+      "end": 3885.0,
+      "type_guess": "combat",
+      "summary": "Keep this as one cluster: smoke opened the entry, then each target was solved from a new piece of cover rather than treated as a separate fight.",
+      "location_id": "Dam interior stair and crate lane",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Used smoke and actively hunted a known squad through connected positions."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won_cluster."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_26_combat",
+      "start": 3912.0,
+      "end": 3982.0,
+      "type_guess": "combat",
+      "summary": "This is the session\u2019s best success example: height, target order, and controlled bursts protected both the fight and the loot route.",
+      "location_id": "Dam interior elevated platform",
+      "evidence": [
+        {
+          "kind": "sustained_exchange",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Had awareness of several enemy positions and controlled the engagement from height."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: squad_wipe."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_20_aftermath_loot",
+      "start": 3982,
+      "end": 4300,
+      "type_guess": "death_crate",
+      "summary": "Post-combat looting, death crates, and inventory.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "death_crate",
+          "strength": 0.8,
+          "claim": "Post-combat looting, death crates, and inventory."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_21_admin_clear",
+      "start": 4555,
+      "end": 4615,
+      "type_guess": "angle_clear",
+      "summary": "Room clearing and footsteps before the hallway exchange.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "angle_clear",
+          "strength": 0.8,
+          "claim": "Room clearing and footsteps before the hallway exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_27_combat",
+      "start": 4616.0,
+      "end": 4617.0,
+      "type_guess": "combat",
+      "summary": "Audio information created the advantage; hold the crosshair at the likely head height before the corner appears.",
+      "location_id": "Administrative hallway",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Heard footsteps before rounding the corner."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_22_travel_map",
+      "start": 4619,
+      "end": 4902,
+      "type_guess": "movement",
+      "summary": "Long travel, loot, and map checks before late contact.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "movement",
+          "strength": 0.8,
+          "claim": "Long travel, loot, and map checks before late contact."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_28_combat",
+      "start": 4903.0,
+      "end": 4906.0,
+      "type_guess": "combat",
+      "summary": "The late fight was forced by proximity to the extraction route; win quickly, heal, and keep the route moving toward extraction.",
+      "location_id": "Road near Visitor Center extraction route",
+      "evidence": [
+        {
+          "kind": "weapon_fire_at_live_enemy",
+          "strength": 0.95,
+          "claim": "Visible live-target exchange or sustained combat."
+        },
+        {
+          "kind": "live_enemy",
+          "strength": 0.9,
+          "claim": "Saw an enemy operator in the open while moving toward extraction."
+        },
+        {
+          "kind": "enemy_eliminated",
+          "strength": 0.95,
+          "claim": "Visible consequence: won."
+        },
+        {
+          "kind": "kill_feed_attributed",
+          "strength": 0.75,
+          "claim": "Outcome confirmation channel tied to the same exchange."
+        }
+      ]
+    },
+    {
+      "event_id": "cand_23_extraction",
+      "start": 4910,
+      "end": 5002.266667,
+      "type_guess": "extraction",
+      "summary": "Healing, extraction countdown, and post-match inventory.",
+      "location_id": "context_only",
+      "evidence": [
+        {
+          "kind": "extraction",
+          "strength": 0.8,
+          "claim": "Healing, extraction countdown, and post-match inventory."
+        }
+      ]
+    }
+  ],
+  "ledger_notes": {
+    "policy": "Raw candidates are proposals. The deterministic resolver must promote only interaction plus consequence and must retain vetoed context for audit.",
+    "known_negatives": [
+      "loot",
+      "death_crate",
+      "inventory_screen",
+      "peek",
+      "angle_clear",
+      "movement",
+      "recovery",
+      "menu",
+      "extraction"
+    ]
+  }
+}

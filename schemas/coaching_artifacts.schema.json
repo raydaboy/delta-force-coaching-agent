@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resolved and Curated Coaching Artifacts",
+  "definitions": {
+    "evidenceEntry": {
+      "type": "object",
+      "required": ["kind", "class"],
+      "properties": {
+        "kind": {"type": "string"},
+        "class": {"enum": ["observed", "inferred", "unknown"]},
+        "source_times": {"type": "array", "items": {"type": "number"}},
+        "claim": {"type": "string"}
+      }
+    },
+    "fight": {
+      "type": "object",
+      "required": ["fight_id", "source_start", "source_end", "combat_start", "outcome_time", "outcome", "confidence"],
+      "properties": {
+        "fight_id": {"type": "string"},
+        "source_start": {"type": "number", "minimum": 0},
+        "source_end": {"type": "number", "exclusiveMinimum": 0},
+        "combat_start": {"type": "number", "minimum": 0},
+        "decision_time": {"type": "number", "minimum": 0},
+        "outcome_time": {"type": "number", "minimum": 0},
+        "review_start": {"type": "number", "minimum": 0},
+        "outcome": {"type": "string"},
+        "location": {"type": "string"},
+        "confidence": {"enum": ["high", "medium", "low", "information_limited"]},
+        "goal_relation": {"type": "string"},
+        "lesson_category": {"type": "string"},
+        "novelty": {"type": "string"},
+        "review_depth": {"enum": ["micro", "standard", "deep"]},
+        "unknowns": {"type": "array", "items": {"type": "string"}},
+        "evidence_classes": {"type": "array", "items": {"enum": ["observed", "inferred", "unknown"]}}
+      },
+      "additionalProperties": true
+    }
+  },
+  "type": "object",
+  "properties": {
+    "resolved_event_map": {
+      "type": "object",
+      "required": ["events", "fights"],
+      "properties": {"events": {"type": "array"}, "fights": {"type": "array"}}
+    },
+    "contextual_coaching_map": {
+      "type": "object",
+      "required": ["source", "player_goal", "selected_fights", "selection_policy"],
+      "properties": {
+        "source": {"type": "object"},
+        "player_goal": {"type": "object"},
+        "selected_fights": {"type": "array", "items": {"$ref": "#/$defs/fight"}},
+        "selection_policy": {"type": "object"}
+      }
+    }
+  },
+  "$defs": {
+    "fight": {"$ref": "#/definitions/fight"}
+  },
+  "additionalProperties": true
+}

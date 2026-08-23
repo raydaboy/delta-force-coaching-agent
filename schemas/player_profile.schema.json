@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Player Profile",
+  "type": "object",
+  "required": ["profile_id", "created_at", "player", "experience", "teaching_preferences"],
+  "properties": {
+    "profile_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string"},
+    "player": {
+      "type": "object",
+      "required": ["display_name"],
+      "properties": {
+        "display_name": {"type": "string"},
+        "region_or_language": {"type": "string"},
+        "platform": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "experience": {
+      "type": "object",
+      "required": ["current_game", "games_played", "current_game_proficiency"],
+      "properties": {
+        "current_game": {"type": "string"},
+        "current_mode_or_role": {"type": "string"},
+        "games_played": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "familiarity"],
+            "properties": {
+              "title": {"type": "string"},
+              "time_played": {"type": "string"},
+              "roles_or_loadouts": {"type": "array", "items": {"type": "string"}},
+              "familiarity": {"enum": ["new", "beginner", "intermediate", "advanced", "expert", "unknown"]},
+              "transferable_skills": {"type": "array", "items": {"type": "string"}}
+            },
+            "additionalProperties": true
+          }
+        },
+        "current_game_proficiency": {
+          "type": "object",
+          "required": ["self_rating"],
+          "properties": {
+            "self_rating": {"enum": ["new", "beginner", "intermediate", "advanced", "expert", "unknown"]},
+            "self_rating_scale": {"type": "string"},
+            "hours_or_matches": {"type": "string"},
+            "confidence_by_skill": {"type": "object", "additionalProperties": {"type": "string"}},
+            "rank_or_bracket": {"type": "string"}
+          },
+          "additionalProperties": true
+        },
+        "goals_by_skill": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "teaching_preferences": {
+      "type": "object",
+      "required": ["language_level"],
+      "properties": {
+        "language_level": {"enum": ["simple_game_language", "intermediate", "advanced"]},
+        "preferred_examples": {"type": "array", "items": {"type": "string"}},
+        "wants_enemy_perspective": {"type": "boolean"},
+        "wants_question_first_review": {"type": "boolean"},
+        "review_depth": {"enum": ["concise", "standard", "detailed"]}
+      },
+      "additionalProperties": true
+    },
+    "privacy": {
+      "type": "object",
+      "properties": {
+        "persist_profile": {"type": "boolean"},
+        "share_with_external_services": {"type": "boolean"},
+        "delete_after_run": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

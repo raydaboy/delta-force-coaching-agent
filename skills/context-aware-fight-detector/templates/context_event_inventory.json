@@ -1,0 +1,38 @@
+{
+  "source": {
+    "path": "/absolute/path/source.mp4",
+    "duration_seconds": 0,
+    "fps": 0,
+    "resolution": "",
+    "game": "Delta Force Mobile",
+    "mode": "",
+    "limitations": []
+  },
+  "detector": {
+    "version": "context-aware-fight-detector-v1",
+    "policy": "promote only interaction plus consequence",
+    "minimum_independent_channels": 2,
+    "weak_signal_vetoes": ["loot", "death_crate", "inventory_screen", "angle_clear", "peek", "movement", "recovery", "visual_peak", "generic_audio_peak"]
+  },
+  "events": [
+    {
+      "event_id": "event_001",
+      "start": 0.0,
+      "end": 0.0,
+      "type_guess": "contact",
+      "summary": "",
+      "location_id": "",
+      "evidence": [
+        {
+          "kind": "live_enemy|shots_exchanged|damage_feedback|kill_feed_attributed|player_death|retreat_after_damage|inventory_screen|loot_screen|angle_clear|movement",
+          "strength": 0.0,
+          "claim": ""
+        }
+      ]
+    }
+  ],
+  "resolved_events": [],
+  "fights": [],
+  "rejected_candidates": [],
+  "unknowns": []
+}

@@ -1,0 +1,176 @@
+{
+  "source_file": "/home/ubuntu/upload/Screen_Recording_20260822_140704_compress.mp4",
+  "target_duration_seconds": 488.0,
+  "clips": [
+    {
+      "label": "fight_04",
+      "kind": "combat",
+      "source_start": 136.0,
+      "source_end": 148.0,
+      "keep_complete": true,
+      "outcome": "injured_retreat",
+      "goal_relation": "forced_damage_then_loot_preservation",
+      "lesson_category": "disengage_after_bad_trade"
+    },
+    {
+      "label": "fight_06",
+      "kind": "combat",
+      "source_start": 174.0,
+      "source_end": 190.0,
+      "keep_complete": true,
+      "outcome": "lost",
+      "goal_relation": "forced_close_threat_to_loot_or_position",
+      "lesson_category": "close_range_exit"
+    },
+    {
+      "label": "fight_10",
+      "kind": "combat",
+      "source_start": 958.0,
+      "source_end": 990.0,
+      "keep_complete": true,
+      "outcome": "lost",
+      "goal_relation": "optional_long_range_risk_to_extraction",
+      "lesson_category": "exposure_and_retreat"
+    },
+    {
+      "label": "fight_11",
+      "kind": "combat",
+      "source_start": 1254.0,
+      "source_end": 1303.0,
+      "keep_complete": true,
+      "outcome": "lost",
+      "goal_relation": "forced_multi_target_threat",
+      "lesson_category": "target_isolation"
+    },
+    {
+      "label": "fight_13",
+      "kind": "combat",
+      "source_start": 2142.0,
+      "source_end": 2178.0,
+      "keep_complete": true,
+      "outcome": "won_cluster",
+      "goal_relation": "forced_close_cluster_after_trap",
+      "lesson_category": "damage_recovery"
+    },
+    {
+      "label": "fight_14",
+      "kind": "combat",
+      "source_start": 2318.0,
+      "source_end": 2400.0,
+      "keep_complete": true,
+      "outcome": "won_or_knockdown_cluster",
+      "goal_relation": "forced_pressure_with_debuff_and_reset",
+      "lesson_category": "reset_timing"
+    },
+    {
+      "label": "fight_16",
+      "kind": "combat",
+      "source_start": 2475.0,
+      "source_end": 2505.0,
+      "keep_complete": true,
+      "outcome": "won_cluster",
+      "goal_relation": "loot_interruption_forced_fight",
+      "lesson_category": "loot_vs_safety"
+    },
+    {
+      "label": "fight_19",
+      "kind": "combat",
+      "source_start": 2915.0,
+      "source_end": 2932.0,
+      "keep_complete": true,
+      "outcome": "won_cluster",
+      "goal_relation": "optional_ai_cluster_connective_success",
+      "lesson_category": "movement_and_target_split"
+    },
+    {
+      "label": "fight_21",
+      "kind": "combat",
+      "source_start": 3098.0,
+      "source_end": 3110.0,
+      "keep_complete": true,
+      "outcome": "won",
+      "goal_relation": "optional_isolated_finish_before_rotation",
+      "lesson_category": "surprise_and_rotation"
+    },
+    {
+      "label": "fight_23",
+      "kind": "combat",
+      "source_start": 3601.0,
+      "source_end": 3618.0,
+      "keep_complete": true,
+      "outcome": "won",
+      "goal_relation": "loot_interruption_close_threat",
+      "lesson_category": "emergency_melee_and_reset"
+    },
+    {
+      "label": "fight_24",
+      "kind": "combat",
+      "source_start": 3805.0,
+      "source_end": 3837.0,
+      "keep_complete": true,
+      "outcome": "escaped",
+      "goal_relation": "extraction_preserving_escape",
+      "lesson_category": "loot_preservation"
+    },
+    {
+      "label": "fight_25",
+      "kind": "combat",
+      "source_start": 3855.0,
+      "source_end": 3906.0,
+      "keep_complete": true,
+      "outcome": "won_cluster",
+      "goal_relation": "forced_squad_cluster",
+      "lesson_category": "smoke_and_cover_chain"
+    },
+    {
+      "label": "fight_26",
+      "kind": "combat",
+      "source_start": 3906.0,
+      "source_end": 3990.0,
+      "keep_complete": true,
+      "outcome": "squad_wipe",
+      "goal_relation": "model_success_protected_loot_route",
+      "lesson_category": "positioning_target_order"
+    },
+    {
+      "label": "fight_27",
+      "kind": "combat",
+      "source_start": 4613.0,
+      "source_end": 4623.0,
+      "keep_complete": true,
+      "outcome": "won",
+      "goal_relation": "forced_audio_contact",
+      "lesson_category": "audio_and_crosshair"
+    },
+    {
+      "label": "fight_28",
+      "kind": "combat",
+      "source_start": 4902.0,
+      "source_end": 4910.0,
+      "keep_complete": true,
+      "outcome": "won",
+      "goal_relation": "forced_extraction_route_contact",
+      "lesson_category": "extraction_risk"
+    }
+  ],
+  "excluded_ranges": [],
+  "selection_policy": {
+    "selected_count": 15,
+    "excluded_accepted_fights": [
+      "fight_01",
+      "fight_02",
+      "fight_03",
+      "fight_05",
+      "fight_07",
+      "fight_08",
+      "fight_09",
+      "fight_12",
+      "fight_15",
+      "fight_17",
+      "fight_18",
+      "fight_20",
+      "fight_22"
+    ],
+    "reason": "retain all high-leverage losses, escapes, loot-interruption fights, extraction-route risks, connected clusters, and a few distinct success examples; omit routine isolated AI kills that add no new lesson"
+  }
+}

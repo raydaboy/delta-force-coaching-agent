@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Goal Record",
+  "type": "object",
+  "required": ["session_id", "source_path", "player_stated_goal"],
+  "properties": {
+    "session_id": {"type": "string", "minLength": 1},
+    "source_path": {"type": "string", "minLength": 1},
+    "player_stated_goal": {
+      "type": "object",
+      "required": ["primary_goal", "secondary_goals", "engagement_policy", "forced_fight_definition"],
+      "properties": {
+        "primary_goal": {"type": "string"},
+        "secondary_goals": {"type": "array", "items": {"type": "string"}},
+        "engagement_policy": {"type": "string"},
+        "forced_fight_definition": {"type": "array", "items": {"type": "string"}},
+        "unfavorable_fight_default": {"type": "string"},
+        "questionnaire_status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "episode_agenda": {"type": "object"}
+  },
+  "additionalProperties": true
+}

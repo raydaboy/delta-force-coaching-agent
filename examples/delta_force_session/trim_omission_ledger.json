@@ -1,0 +1,239 @@
+{
+  "source": "/home/ubuntu/upload/Screen_Recording_20260822_140704_compress.mp4",
+  "kept_fights": [
+    "fight_04",
+    "fight_06",
+    "fight_10",
+    "fight_11",
+    "fight_13",
+    "fight_14",
+    "fight_16",
+    "fight_19",
+    "fight_21",
+    "fight_23",
+    "fight_24",
+    "fight_25",
+    "fight_26",
+    "fight_27",
+    "fight_28"
+  ],
+  "omitted_fights": [
+    {
+      "fight_id": "fight_01",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_02",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_03",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_05",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_07",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_08",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_09",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_12",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_15",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_17",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_18",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_20",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    },
+    {
+      "fight_id": "fight_22",
+      "reason": "routine isolated AI/short exchange with no distinct goal lesson; covered by pattern bridges rather than a full review"
+    }
+  ],
+  "omitted_context_events": [
+    {
+      "start": 0.0,
+      "end": 39.0,
+      "label": "setup_and_deployment",
+      "reason": "not combat"
+    },
+    {
+      "start": 39.0,
+      "end": 68.0,
+      "label": "movement_and_looting",
+      "reason": "no confirmed combat"
+    },
+    {
+      "start": 88.0,
+      "end": 99.0,
+      "label": "contact_and_healing",
+      "reason": "contact or recovery only except promoted exchanges"
+    },
+    {
+      "start": 106.0,
+      "end": 112.0,
+      "label": "contact_only",
+      "reason": "visual sighting through window, no exchange"
+    },
+    {
+      "start": 116.0,
+      "end": 123.0,
+      "label": "contact_only",
+      "reason": "tunnel sightings without exchange"
+    },
+    {
+      "start": 328.0,
+      "end": 483.0,
+      "label": "menus_and_loadout",
+      "reason": "not gameplay"
+    },
+    {
+      "start": 558.0,
+      "end": 575.0,
+      "label": "contact_or_setup",
+      "reason": "no shots exchanged"
+    },
+    {
+      "start": 830.0,
+      "end": 950.0,
+      "label": "travel_loot_healing",
+      "reason": "no confirmed combat"
+    },
+    {
+      "start": 950.0,
+      "end": 961.0,
+      "label": "contact_only",
+      "reason": "sighting before roof exchange"
+    },
+    {
+      "start": 1320.0,
+      "end": 1510.0,
+      "label": "travel_loot_healing",
+      "reason": "no confirmed combat"
+    },
+    {
+      "start": 1930.0,
+      "end": 2049.0,
+      "label": "menus_and_deployment",
+      "reason": "not gameplay"
+    },
+    {
+      "start": 1980.0,
+      "end": 2050.0,
+      "label": "loot_and_settings",
+      "reason": "not combat"
+    },
+    {
+      "start": 1902.0,
+      "end": 1932.0,
+      "label": "scouting_and_peeking",
+      "reason": "no exchange"
+    },
+    {
+      "start": 2490.0,
+      "end": 2600.0,
+      "label": "loot_travel_healing",
+      "reason": "aftermath/context only"
+    },
+    {
+      "start": 2643.0,
+      "end": 2787.0,
+      "label": "travel_inventory",
+      "reason": "no exchange"
+    },
+    {
+      "start": 3211.0,
+      "end": 3328.0,
+      "label": "menus_and_matchmaking",
+      "reason": "not gameplay"
+    },
+    {
+      "start": 3350.0,
+      "end": 3390.0,
+      "label": "deployment_travel",
+      "reason": "not combat"
+    },
+    {
+      "start": 3400.0,
+      "end": 3445.0,
+      "label": "loot_travel",
+      "reason": "no exchange"
+    },
+    {
+      "start": 3550.0,
+      "end": 3565.0,
+      "label": "loot_and_settings",
+      "reason": "not combat"
+    },
+    {
+      "start": 3660.0,
+      "end": 3780.0,
+      "label": "loot_travel_healing",
+      "reason": "no exchange"
+    },
+    {
+      "start": 3982.0,
+      "end": 4300.0,
+      "label": "death_crates_inventory_travel",
+      "reason": "aftermath only"
+    },
+    {
+      "start": 4300.0,
+      "end": 4555.0,
+      "label": "travel_loot",
+      "reason": "no exchange"
+    },
+    {
+      "start": 4555.0,
+      "end": 4615.0,
+      "label": "travel_and_room_clears",
+      "reason": "no exchange"
+    },
+    {
+      "start": 4617.0,
+      "end": 4902.0,
+      "label": "travel_loot_and_map_checks",
+      "reason": "no exchange"
+    },
+    {
+      "start": 4910.0,
+      "end": 5002.266667,
+      "label": "extraction_and_post_match_inventory",
+      "reason": "goal outcome/context only"
+    }
+  ],
+  "strict_vetoes": [
+    "menus",
+    "deployment",
+    "long travel",
+    "repeated loot",
+    "death crates",
+    "inventory sorting",
+    "routine peeks",
+    "angle clears",
+    "unconnected healing",
+    "extraction countdown except compact payoff"
+  ],
+  "payoff_policy": "retain only the final short extraction outcome after the last route fight; do not preserve the long approach or inventory tail."
+}

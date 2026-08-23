@@ -1,0 +1,471 @@
+{
+  "source": {
+    "path": "/home/ubuntu/upload/Screen_Recording_20260822_140704_compress.mp4",
+    "duration_seconds": 5002.266667,
+    "resolution": "392x178",
+    "fps": 30,
+    "audio": "AAC stereo 48 kHz",
+    "game": "Delta Force Mobile",
+    "map": "primarily Zero Dam",
+    "source_limitations": [
+      "compressed ultrawide gameplay canvas",
+      "some enemy intent and off-screen positions remain unknown",
+      "chunked multimodal analysis is used as candidate evidence and must not override visible continuity"
+    ]
+  },
+  "player_goal": {
+    "primary": "Extract safely with valuable loot.",
+    "secondary": "Win fights when a nearby enemy threatens valuable loot or the player is already in close danger.",
+    "supporting": [
+      "Improve movement.",
+      "Improve positioning.",
+      "Improve aiming."
+    ],
+    "fight_policy": "Do not hunt unnecessary fights, but commit to winning a forced close-range fight when an enemy comes knocking; judge the decision by whether it protects the loot objective and preserves a realistic escape option.",
+    "coaching_question": "Did this action increase the chance of extracting with the loot, and if the fight was forced, did the player create the safest path to win it?"
+  },
+  "selected_fights": [
+    {
+      "fight_id": "fight_04",
+      "source_start": 136.0,
+      "combat_start": 141.0,
+      "decision_time": 141.0,
+      "outcome_time": 144.0,
+      "source_end": 148.0,
+      "outcome": "injured_retreat",
+      "location": "Exterior yard near yellow loader",
+      "player_knew": "Was caught in the open and took significant damage.",
+      "confidence": "high",
+      "lesson": "When loot is not yet secured and the first trade is bad, break the line before trying to win it back.",
+      "review_start": 144.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_damage_then_loot_preservation",
+      "lesson_category": "disengage_after_bad_trade",
+      "novelty": "progression_checkpoint",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_06",
+      "source_start": 174.0,
+      "combat_start": 174.0,
+      "decision_time": 174.0,
+      "outcome_time": 189.0,
+      "source_end": 190.0,
+      "outcome": "lost",
+      "location": "Container yard close quarters",
+      "player_knew": "Was ambushed at close range and exposed to enemy fire or gadgets.",
+      "confidence": "high",
+      "lesson": "A forced close fight needs a nearby exit; do not spend the whole fight trapped between containers.",
+      "review_start": 189.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_close_threat_to_loot_or_position",
+      "lesson_category": "close_range_exit",
+      "novelty": "first_high_risk_loss",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_10",
+      "source_start": 958.0,
+      "combat_start": 964.0,
+      "decision_time": 961.0,
+      "outcome_time": 974.0,
+      "source_end": 990.0,
+      "outcome": "lost",
+      "location": "Visitor Center roof",
+      "player_knew": "Saw enemies below from the roof and had a long-range line.",
+      "confidence": "high",
+      "lesson": "A visible target is not automatically a safe target; keep a retreat route before opening from a roof.",
+      "review_start": 974.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "optional_long_range_risk_to_extraction",
+      "lesson_category": "exposure_and_retreat",
+      "novelty": "different_version_of_exposure",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_11",
+      "source_start": 1254.0,
+      "combat_start": 1254.0,
+      "decision_time": 1254.0,
+      "outcome_time": 1290.0,
+      "source_end": 1303.0,
+      "outcome": "lost",
+      "location": "Cement Plant building near tunnel",
+      "player_knew": "Initially saw one enemy, then faced multiple threats and tactical pressure.",
+      "confidence": "high",
+      "lesson": "When one target becomes several, stop trying to finish the first target and move to a position that cuts the group apart.",
+      "review_start": 1290.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_multi_target_threat",
+      "lesson_category": "target_isolation",
+      "novelty": "repeated_group_pressure",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_13",
+      "source_start": 2142.0,
+      "combat_start": 2156.0,
+      "decision_time": 2157.0,
+      "outcome_time": 2167.0,
+      "source_end": 2178.0,
+      "outcome": "won_cluster",
+      "location": "Hallway after fire trap",
+      "player_knew": "Heard enemies near the ladder and was hit by a trap or grenade before the exchange.",
+      "confidence": "high",
+      "lesson": "After unexpected damage, use the first hard cover, finish the nearest threat, and do not let the next target choose the range.",
+      "review_start": 2167.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_close_cluster_after_trap",
+      "lesson_category": "damage_recovery",
+      "novelty": "new_damage_source",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_14",
+      "source_start": 2318.0,
+      "combat_start": 2333.0,
+      "decision_time": 2334.0,
+      "outcome_time": 2394.0,
+      "source_end": 2400.0,
+      "outcome": "won_or_knockdown_cluster",
+      "location": "Doorway, hallway, and stairs",
+      "player_knew": "Was debuffed, then pressured through several connected positions.",
+      "confidence": "high",
+      "lesson": "This is one sustained pressure episode, not four separate fights: break contact when debuffed, heal only when the enemy cannot reach you, and keep a landing as the fallback.",
+      "review_start": 2394.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_pressure_with_debuff_and_reset",
+      "lesson_category": "reset_timing",
+      "novelty": "different_version_of_reset",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_16",
+      "source_start": 2475.0,
+      "combat_start": 2477.0,
+      "decision_time": 2478.0,
+      "outcome_time": 2502.0,
+      "source_end": 2505.0,
+      "outcome": "won_cluster",
+      "location": "Cement Plant interior ambush",
+      "player_knew": "Was attacked while vulnerable during looting and returned fire.",
+      "confidence": "high",
+      "lesson": "When loot gets you attacked, stop sorting immediately, use the nearest cover, and solve the closest shooter first.",
+      "review_start": 2502.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "loot_interruption_forced_fight",
+      "lesson_category": "loot_vs_safety",
+      "novelty": "new_loot_conflict",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_19",
+      "source_start": 2915.0,
+      "combat_start": 2920.0,
+      "decision_time": 2922.0,
+      "outcome_time": 2929.0,
+      "source_end": 2932.0,
+      "outcome": "won_cluster",
+      "location": "Major Substation yard",
+      "player_knew": "Entered a yard with multiple guards and used aggressive movement to close distance.",
+      "confidence": "high",
+      "lesson": "Aggression works here because the targets are split; check whether the next target has a clear gun line before chaining the push.",
+      "review_start": 2929.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "optional_ai_cluster_connective_success",
+      "lesson_category": "movement_and_target_split",
+      "novelty": "positive_progression",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_21",
+      "source_start": 3098.0,
+      "combat_start": 3101.0,
+      "decision_time": 3100.0,
+      "outcome_time": 3107.0,
+      "source_end": 3110.0,
+      "outcome": "won",
+      "location": "Visitor Center grass near rock",
+      "player_knew": "Had surprise on a nearby red-clad enemy while moving through grass.",
+      "confidence": "high",
+      "lesson": "The close-range commit was justified by surprise; after the kill, heal and leave instead of turning the win into a loot pause.",
+      "review_start": 3107.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "optional_isolated_finish_before_rotation",
+      "lesson_category": "surprise_and_rotation",
+      "novelty": "micro_bridge",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_23",
+      "source_start": 3601.0,
+      "combat_start": 3603.0,
+      "decision_time": 3603.0,
+      "outcome_time": 3606.0,
+      "source_end": 3618.0,
+      "outcome": "won",
+      "location": "Container yard surprise contact",
+      "player_knew": "Was looting when an enemy appeared at the container corner.",
+      "confidence": "high",
+      "lesson": "The emergency knife draw saved the close-range moment; the improvement is moving toward a corner before returning to loot.",
+      "review_start": 3606.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "loot_interruption_close_threat",
+      "lesson_category": "emergency_melee_and_reset",
+      "novelty": "different_close_range_version",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_24",
+      "source_start": 3805.0,
+      "combat_start": 3811.0,
+      "decision_time": 3812.0,
+      "outcome_time": 3813.0,
+      "source_end": 3837.0,
+      "outcome": "escaped",
+      "location": "Container yard hidden enemy",
+      "player_knew": "Took damage from a hidden enemy and knew the direction but was out of position.",
+      "confidence": "high",
+      "lesson": "This is a successful survival decision: break the line first, heal second, and do not chase a fight that threatens the extraction goal.",
+      "review_start": 3813.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "extraction_preserving_escape",
+      "lesson_category": "loot_preservation",
+      "novelty": "positive_survival_progression",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_25",
+      "source_start": 3855.0,
+      "combat_start": 3873.0,
+      "decision_time": 3873.0,
+      "outcome_time": 3885.0,
+      "source_end": 3906.0,
+      "outcome": "won_cluster",
+      "location": "Dam interior stair and crate lane",
+      "player_knew": "Used smoke and actively hunted a known squad through connected positions.",
+      "confidence": "high",
+      "lesson": "Keep this as one cluster: smoke opened the entry, then each target was solved from a new piece of cover rather than treated as a separate fight.",
+      "review_start": 3885.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_squad_cluster",
+      "lesson_category": "smoke_and_cover_chain",
+      "novelty": "new_cover_chain",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_26",
+      "source_start": 3906.0,
+      "combat_start": 3912.0,
+      "decision_time": 3912.0,
+      "outcome_time": 3982.0,
+      "source_end": 3990.0,
+      "outcome": "squad_wipe",
+      "location": "Dam interior elevated platform",
+      "player_knew": "Had awareness of several enemy positions and controlled the engagement from height.",
+      "confidence": "high",
+      "lesson": "This is the session\u2019s best success example: height, target order, and controlled bursts protected both the fight and the loot route.",
+      "review_start": 3982.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "model_success_protected_loot_route",
+      "lesson_category": "positioning_target_order",
+      "novelty": "new_best_example",
+      "review_depth": "deep",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_27",
+      "source_start": 4613.0,
+      "combat_start": 4616.0,
+      "decision_time": 4616.0,
+      "outcome_time": 4617.0,
+      "source_end": 4623.0,
+      "outcome": "won",
+      "location": "Administrative hallway",
+      "player_knew": "Heard footsteps before rounding the corner.",
+      "confidence": "high",
+      "lesson": "Audio information created the advantage; hold the crosshair at the likely head height before the corner appears.",
+      "review_start": 4617.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_audio_contact",
+      "lesson_category": "audio_and_crosshair",
+      "novelty": "new_information_skill",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    },
+    {
+      "fight_id": "fight_28",
+      "source_start": 4902.0,
+      "combat_start": 4903.0,
+      "decision_time": 4903.0,
+      "outcome_time": 4906.0,
+      "source_end": 4910.0,
+      "outcome": "won",
+      "location": "Road near Visitor Center extraction route",
+      "player_knew": "Saw an enemy operator in the open while moving toward extraction.",
+      "confidence": "high",
+      "lesson": "The late fight was forced by proximity to the extraction route; win quickly, heal, and keep the route moving toward extraction.",
+      "review_start": 4906.3,
+      "trim_rationale": "verified setup through outcome plus short consequence; no unrelated loot/menu/travel retained",
+      "goal_relation": "forced_extraction_route_contact",
+      "lesson_category": "extraction_risk",
+      "novelty": "extraction_endgame",
+      "review_depth": "standard",
+      "evidence_classes": [
+        "observed",
+        "inferred",
+        "unknown"
+      ],
+      "unknowns": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ]
+    }
+  ],
+  "cold_open_fight": "fight_26",
+  "selection_policy": {
+    "selected_count": 15,
+    "excluded_accepted_fights": [
+      "fight_01",
+      "fight_02",
+      "fight_03",
+      "fight_05",
+      "fight_07",
+      "fight_08",
+      "fight_09",
+      "fight_12",
+      "fight_15",
+      "fight_17",
+      "fight_18",
+      "fight_20",
+      "fight_22"
+    ],
+    "reason": "retain all high-leverage losses, escapes, loot-interruption fights, extraction-route risks, connected clusters, and a few distinct success examples; omit routine isolated AI kills that add no new lesson"
+  },
+  "review_contract": {
+    "order": [
+      "action",
+      "visible_outcome",
+      "question",
+      "pause",
+      "rewind_or_freeze",
+      "observed",
+      "inferred",
+      "unknown",
+      "realistic_alternative",
+      "tradeoff",
+      "next_game_cue"
+    ],
+    "review_start_rule": "outcome_time + 0.3 seconds",
+    "goal_test": "Does the decision protect valuable loot or safely solve a forced close threat?"
+  }
+}

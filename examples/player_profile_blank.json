@@ -1,0 +1,35 @@
+{
+  "profile_id": "profile_pending",
+  "created_at": "",
+  "updated_at": "",
+  "player": {
+    "display_name": "",
+    "region_or_language": "",
+    "platform": ""
+  },
+  "experience": {
+    "current_game": "",
+    "current_mode_or_role": "",
+    "games_played": [],
+    "current_game_proficiency": {
+      "self_rating": "unknown",
+      "self_rating_scale": "",
+      "hours_or_matches": "",
+      "confidence_by_skill": {},
+      "rank_or_bracket": ""
+    },
+    "goals_by_skill": []
+  },
+  "teaching_preferences": {
+    "language_level": "simple_game_language",
+    "preferred_examples": [],
+    "wants_enemy_perspective": false,
+    "wants_question_first_review": true,
+    "review_depth": "standard"
+  },
+  "privacy": {
+    "persist_profile": false,
+    "share_with_external_services": false,
+    "delete_after_run": false
+  }
+}

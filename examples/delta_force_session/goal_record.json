@@ -1,0 +1,31 @@
+{
+  "session_id": "delta_force_mobile_20260822_140704",
+  "source_path": "/home/ubuntu/upload/Screen_Recording_20260822_140704_compress.mp4",
+  "player_stated_goal": {
+    "primary_goal": "extract_with_valuable_loot",
+    "secondary_goals": [
+      "win_forced_fights",
+      "improve_movement_positioning_aim"
+    ],
+    "engagement_policy": "do_not_hunt_unnecessary_fights; win when a nearby enemy threatens valuable loot or position or is close enough to attack",
+    "forced_fight_definition": [
+      "enemy threatens valuable loot or position",
+      "enemy close enough to attack"
+    ],
+    "unfavorable_fight_default": "protect the loot by taking the first safe exchange and disengaging when damage or lost position removes a safe win path",
+    "questionnaire_status": "captured from the user interaction before editing"
+  },
+  "episode_agenda": {
+    "strengths": [
+      "fast close-range reactions when the target is isolated",
+      "effective use of smoke, height, and cover in later clusters",
+      "several successful survival decisions that preserved the extraction route"
+    ],
+    "priorities": [
+      "create an exit before committing to a close fight",
+      "stop sorting loot immediately when a threat appears and reset behind cover",
+      "separate connected enemies and stop re-peeking after a bad first trade"
+    ],
+    "interactive_format": "show each selected engagement to its outcome, then ask a simple question before the explanation"
+  }
+}

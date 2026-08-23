@@ -1,0 +1,64 @@
+run:
+  mode: all
+  work_dir: ./work
+  output_dir: ./dist
+  keep_intermediates: true
+  source_copy: false
+
+analysis:
+  candidate_backend: manual_or_multimodal
+  resolver_merge_gap_seconds: 4.0
+  resolver_outcome_follow_gap_seconds: 8.0
+  resolver_reset_cooldown_seconds: 3.0
+  require_interaction_and_consequence: true
+  retain_negative_candidates: true
+  allowed_outcomes: [won, lost, escaped, injured_retreat, unresolved]
+
+selection:
+  max_featured_fights: 15
+  preserve_complete_engagements: true
+  preserve_goal_relevant_escapes: true
+  preserve_extraction_payoff: compact
+  max_loot_ratio: 0.25
+  omit_unconnected_travel: true
+  omit_menus_and_inventory: true
+  omit_routine_peeks: true
+  omit_unconnected_healing: true
+
+coaching:
+  language_level: simple_game_language
+  review_start_offset_after_outcome_seconds: 0.3
+  question_pause_seconds: 3.0
+  micro_review_seconds: [6, 10]
+  standard_review_seconds: [20, 35]
+  deep_review_seconds: [45, 75]
+  max_learning_objectives: 3
+  max_priority_corrections: 3
+  evidence_classes: [observed, inferred, unknown]
+  require_realistic_tradeoff: true
+  prohibit_guaranteed_counterfactuals: true
+
+render:
+  backend_preference: [kinocut, hyperframes_ffmpeg_fallback]
+  width: 1920
+  height: 1080
+  fps: 30
+  preserve_native_aspect_ratio: true
+  letterbox_when_needed: true
+  video_codec: libx264
+  audio_codec: aac
+  audio_sample_rate: 48000
+  audio_target_lufs: -16
+  true_peak_max_dbfs: -1.5
+  pure_gameplay: true
+  allow_memes: false
+  allow_stickers: false
+  allow_downloaded_reaction_footage: false
+
+qc:
+  required_human_passes: [temporal_context, coaching_usefulness, session_memory, audio_pacing]
+  block_on_major: true
+  block_on_blocker: true
+  inspect_rendered_mp4: true
+  require_full_length_audio_scan: true
+  require_contact_sheet: true

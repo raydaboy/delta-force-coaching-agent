@@ -1,0 +1,14 @@
+services:
+  coaching-worker:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    env_file:
+      - ../.env
+    volumes:
+      - ${COACHING_INPUT_ROOT:-../input}:/data/input:ro
+      - ${COACHING_MODEL_ROOT:-../models}:/data/models:ro
+      - ${COACHING_WORK_ROOT:-../runs}:/data/runs
+    profiles: [worker]
+    # Example invocation:
+    # docker compose run --rm coaching-worker --source /data/input/gameplay.mp4 --goal /data/input/goal_record.json --run-id example_001 --runs-root /data/runs
