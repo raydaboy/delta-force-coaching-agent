@@ -6,7 +6,7 @@ Build a useful coaching session from a user-authorized gameplay recording. Optim
 
 ## Mandatory startup
 
-Read this file first. If no player profile exists, offer the optional profile questionnaire before the match-goal questionnaire. Then read the skill file matching the requested operation. For a full coaching video, read these in order: `skills/context-aware-fight-detector/SKILL.md`, `skills/gameplay-session-coach/SKILL.md`, `skills/interactive-coaching-script/SKILL.md`, `skills/session-coaching-explainer/SKILL.md`, `skills/coaching-scene-qc/SKILL.md`, and `skills/pure-gaming-highlights/SKILL.md`. Inspect the applicable schema before writing each JSON artifact. Never rely on previous chat context as the only specification.
+Read this file first. If no player profile exists, offer the optional profile questionnaire before the match-goal questionnaire. Then read the skill file matching the requested operation. For a full coaching video, read these in order: `skills/context-aware-fight-detector/SKILL.md`, `skills/gameplay-session-coach/SKILL.md`, `skills/teaching-engine/SKILL.md`, `skills/interactive-coaching-script/SKILL.md`, `skills/session-coaching-explainer/SKILL.md`, `skills/coaching-scene-qc/SKILL.md`, and `skills/pure-gaming-highlights/SKILL.md`. Inspect the applicable schema before writing each JSON artifact. Never rely on previous chat context as the only specification.
 
 ## Pipeline invariants
 
@@ -18,7 +18,7 @@ Read this file first. If no player profile exists, offer the optional profile qu
 6. Every selected fight must show setup, real first combat, turning point, visible outcome, and short useful aftermath. A review begins only after the outcome.
 7. Every spoken claim is labelled `observed`, `inferred`, or `unknown`. Do not invent enemy locations, intent, teammate presence, loot value, or guaranteed counterfactual results.
 8. Questions appear before reveals. Use a 2–4 second thinking window when the player could answer from the paused frame.
-9. Keep coaching specific. Each lesson must identify what happened, what helped, what hurt, a realistic alternative, the trade-off, and one next-game cue. Do not repeat “use cover” without naming the visible cover or explaining the changed situation.
+9. Keep coaching specific. Use the teaching-engine contract: identify the goal conflict, turning point, what helped, what hurt, a local realistic alternative, the trade-off, one next-game cue, and a measurable drill. Reject any alternative that could be pasted into another fight unchanged.
 10. Do not use memes, stickers, reaction graphics, decorative overlays, downloaded footage, or copyrighted inserts in pure-gameplay mode.
 11. A technical pass does not replace a human-watch pass. Run temporal context, coaching usefulness, session-memory/repetition, and final audio/pacing reviews on the rendered MP4 itself.
 
@@ -43,6 +43,7 @@ A complete run must produce at least the following files:
 | `resolved_event_map.json` | All resolved events plus promoted fights and rejection reasons |
 | `session_map.json` | Patterns, strengths, weaknesses, evidence ledger, priorities, unknowns |
 | `contextual_coaching_map.json` | Selected fights, boundaries, goal relation, risk, novelty, review depth |
+| `teaching_lessons.json` | Per-fight lesson type, evidence classes, local alternative, progression label, cue, and drill |
 | `trim_omission_ledger.json` | Kept fights, omitted fights, omitted ranges, reasons |
 | `episode_script.json` | Question/reveal/alternative/drill beats and evidence references |
 | `scene_manifest.json` | Render order, clip paths, visual lifetimes, audio timing |

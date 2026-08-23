@@ -19,7 +19,7 @@ The normal pipeline converts one source recording into the following artifact ch
 | Context resolution | Candidate inventory | `resolved_event_map.json` | Only interaction-plus-consequence events become fights; vetoed events stay auditable |
 | Session coaching | Resolved fights plus goal record | `session_map.json`, learning agenda | Strengths and priorities cite timestamped evidence |
 | Edit selection | Session map | `contextual_coaching_map.json`, trim ledger | Complete setup, exchange, outcome, and short consequence retained |
-| Script generation | Coaching map | Episode script and narration | Questions precede reveals; language is concrete; claims carry evidence classes |
+| Teaching generation | Coaching map plus profile | Teaching ledger, episode script, narration, drills | Every lesson has a local decision, trade-off, novelty label, and measurable cue |
 | Composition | Clips, stills, narration | HyperFrames project and scene manifest | Source action plays before review; annotations have bounded lifetime |
 | Finishing | Composition plus source audio | Final H.264/AAC MP4 | Audio is measured, true-peak safe, and human-watch QC passes |
 
@@ -32,6 +32,7 @@ skills/                         Agent operating instructions
   interactive-coaching-script/  Question-first script contract
   session-coaching-explainer/   Action-first coaching video recipe
   coaching-scene-qc/            Semantic scene and post-render QC rules
+  teaching-engine/              Source-specific lessons, progression, and drills
   pure-gaming-highlights/       Focused edit and pure-gameplay rules
 scripts/                        Deterministic command-line pipeline
 schemas/                        JSON contracts and validation schemas
@@ -63,7 +64,7 @@ The player profile is optional but recommended for personalized coaching. It cha
 
 ## Agent operating contract
 
-Before acting, read `AGENTS.md`, the relevant skill files, and the input artifact schemas. Keep raw candidates separate from resolved fights. Never delete negative evidence. Never use a raw vision-model fight list as a final edit map.
+Before acting, read `AGENTS.md`, the relevant skill files—including `skills/teaching-engine/SKILL.md` for lesson generation—and the input artifact schemas. Keep raw candidates separate from resolved fights. Never delete negative evidence. Never use a raw vision-model fight list as a final edit map.
 
 During analysis, maintain these evidence classes:
 

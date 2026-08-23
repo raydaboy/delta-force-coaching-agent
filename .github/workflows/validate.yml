@@ -17,3 +17,8 @@ jobs:
       - run: python -m py_compile scripts/*.py deploy/worker.py
       - run: python scripts/test_context_detector.py
       - run: python scripts/validate_player_profile.py examples/player_profile_blank.json
+      - run: python scripts/validate_teaching.py examples/delta_force_session/teaching_lessons.json
+      - run: python scripts/validate_episode_script.py examples/episode_script.json
+      - run: python scripts/validate_episode_handoff.py examples/scene_recipe.json
+      - run: python scripts/validate_edit_map.py examples/delta_force_session/edit_map.json
+      - run: python -m pytest

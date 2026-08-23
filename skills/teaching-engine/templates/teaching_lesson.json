@@ -1,0 +1,32 @@
+{
+  "lesson_id": "fight_16_lesson",
+  "lesson_type": "goal_tradeoff",
+  "novelty_label": "new_lesson",
+  "source_fight_id": "fight_16",
+  "goal_relation": "loot_interruption_forced_fight",
+  "review_depth": "deep",
+  "decision_point": {
+    "source_time": 2478.0,
+    "description": "The first damage cue arrives while loot interaction is open.",
+    "evidence_refs": ["fight_16.combat_start", "fight_16.outcome_time"]
+  },
+  "observed": ["The player is attacked while vulnerable during loot interaction.", "The player returns fire and the engagement has a visible outcome."],
+  "inferred": ["Canceling the interaction and reaching nearby cover would likely preserve more control."],
+  "unknown": ["Enemy intent and any unseen teammate position are not established."],
+  "what_helped": "The player responds to the close threat instead of remaining in the loot screen.",
+  "what_hurt": "The loot interaction leaves the player exposed at the start of the forced fight.",
+  "realistic_alternative": {
+    "action": "Cancel the loot screen, move behind the nearest visible doorframe or cabinet, and solve the closest shooter first.",
+    "tradeoff": "The items wait while the player gives up a stationary interaction.",
+    "likely_benefit": "This could preserve health and keep a safer route toward extraction.",
+    "unknowns": ["The alternative cannot guarantee a win against an unseen second angle."]
+  },
+  "next_game_cue": "Loot can wait; cover and aim cannot.",
+  "drill": {
+    "name": "Loot-cancel drill",
+    "trigger": "Any shot, damage cue, or close enemy sound during an interaction.",
+    "action": "Exit the interface and move to the nearest visible cover before healing or returning to loot.",
+    "success_condition": "Complete the cancel-and-cover action within one second in three forced contacts.",
+    "scope": "Next three fights"
+  }
+}

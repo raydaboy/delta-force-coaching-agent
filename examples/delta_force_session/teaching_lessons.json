@@ -1,0 +1,679 @@
+{
+  "lessons": [
+    {
+      "lesson_id": "fight_04_lesson",
+      "source_fight_id": "fight_04",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "progression",
+      "progression_note": "progression_checkpoint",
+      "goal_relation": "forced_damage_then_loot_preservation",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 141.0,
+        "description": "When loot is not yet secured and the first trade is bad, break the line before trying to win it back.",
+        "evidence_refs": [
+          "fight_04.decision_time",
+          "fight_04.outcome_time"
+        ]
+      },
+      "observed": [
+        "Was caught in the open and took significant damage.",
+        "The source shows a injured_retreat outcome."
+      ],
+      "inferred": [
+        "At Exterior yard near yellow loader, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "When loot is not yet secured and the first trade is bad, break the line before trying to win it back.",
+      "realistic_alternative": {
+        "action": "At Exterior yard near yellow loader, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Bad first trade: break the line.",
+      "drill": {
+        "name": "Disengage After Bad Trade drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_06_lesson",
+      "source_fight_id": "fight_06",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "new_lesson",
+      "progression_note": "first_high_risk_loss",
+      "goal_relation": "forced_close_threat_to_loot_or_position",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 174.0,
+        "description": "A forced close fight needs a nearby exit; do not spend the whole fight trapped between containers.",
+        "evidence_refs": [
+          "fight_06.decision_time",
+          "fight_06.outcome_time"
+        ]
+      },
+      "observed": [
+        "Was ambushed at close range and exposed to enemy fire or gadgets.",
+        "The source shows a lost outcome."
+      ],
+      "inferred": [
+        "At Container yard close quarters, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "A forced close fight needs a nearby exit; do not spend the whole fight trapped between containers.",
+      "realistic_alternative": {
+        "action": "At Container yard close quarters, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Know the container exit before the close fight.",
+      "drill": {
+        "name": "Close Range Exit drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_10_lesson",
+      "source_fight_id": "fight_10",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "different_version",
+      "progression_note": "different_version_of_exposure",
+      "goal_relation": "optional_long_range_risk_to_extraction",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 961.0,
+        "description": "A visible target is not automatically a safe target; keep a retreat route before opening from a roof.",
+        "evidence_refs": [
+          "fight_10.decision_time",
+          "fight_10.outcome_time"
+        ]
+      },
+      "observed": [
+        "Saw enemies below from the roof and had a long-range line.",
+        "The source shows a lost outcome."
+      ],
+      "inferred": [
+        "At Visitor Center roof, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "A visible target is not automatically a safe target; keep a retreat route before opening from a roof.",
+      "realistic_alternative": {
+        "action": "At Visitor Center roof, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Optional target: keep a roof retreat.",
+      "drill": {
+        "name": "Exposure And Retreat drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_11_lesson",
+      "source_fight_id": "fight_11",
+      "lesson_type": "position",
+      "novelty_label": "repeated_mistake",
+      "progression_note": "repeated_group_pressure",
+      "goal_relation": "forced_multi_target_threat",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 1254.0,
+        "description": "When one target becomes several, stop trying to finish the first target and move to a position that cuts the group apart.",
+        "evidence_refs": [
+          "fight_11.decision_time",
+          "fight_11.outcome_time"
+        ]
+      },
+      "observed": [
+        "Initially saw one enemy, then faced multiple threats and tactical pressure.",
+        "The source shows a lost outcome."
+      ],
+      "inferred": [
+        "At Cement Plant building near tunnel, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "When one target becomes several, stop trying to finish the first target and move to a position that cuts the group apart.",
+      "realistic_alternative": {
+        "action": "At Cement Plant building near tunnel, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "When one becomes several, shrink the angle.",
+      "drill": {
+        "name": "Target Isolation drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_13_lesson",
+      "source_fight_id": "fight_13",
+      "lesson_type": "position",
+      "novelty_label": "new_lesson",
+      "progression_note": "new_damage_source",
+      "goal_relation": "forced_close_cluster_after_trap",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 2157.0,
+        "description": "After unexpected damage, use the first hard cover, finish the nearest threat, and do not let the next target choose the range.",
+        "evidence_refs": [
+          "fight_13.decision_time",
+          "fight_13.outcome_time"
+        ]
+      },
+      "observed": [
+        "Heard enemies near the ladder and was hit by a trap or grenade before the exchange.",
+        "The source shows a won_cluster outcome."
+      ],
+      "inferred": [
+        "At Hallway after fire trap, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "After unexpected damage, use the first hard cover, finish the nearest threat, and do not let the next target choose the range.",
+      "realistic_alternative": {
+        "action": "At Hallway after fire trap, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "After damage, use the doorway before the next shot.",
+      "drill": {
+        "name": "Damage Recovery drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_14_lesson",
+      "source_fight_id": "fight_14",
+      "lesson_type": "position",
+      "novelty_label": "different_version",
+      "progression_note": "different_version_of_reset",
+      "goal_relation": "forced_pressure_with_debuff_and_reset",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 2334.0,
+        "description": "This is one sustained pressure episode, not four separate fights: break contact when debuffed, heal only when the enemy cannot reach you, and keep a landing as the fallback.",
+        "evidence_refs": [
+          "fight_14.decision_time",
+          "fight_14.outcome_time"
+        ]
+      },
+      "observed": [
+        "Was debuffed, then pressured through several connected positions.",
+        "The source shows a won_or_knockdown_cluster outcome."
+      ],
+      "inferred": [
+        "At Doorway, hallway, and stairs, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "This is one sustained pressure episode, not four separate fights: break contact when debuffed, heal only when the enemy cannot reach you, and keep a landing as the fallback.",
+      "realistic_alternative": {
+        "action": "At Doorway, hallway, and stairs, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "A reset is a position, not just a heal.",
+      "drill": {
+        "name": "Reset Timing drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_16_lesson",
+      "source_fight_id": "fight_16",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "new_lesson",
+      "progression_note": "new_loot_conflict",
+      "goal_relation": "loot_interruption_forced_fight",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 2478.0,
+        "description": "When loot gets you attacked, stop sorting immediately, use the nearest cover, and solve the closest shooter first.",
+        "evidence_refs": [
+          "fight_16.decision_time",
+          "fight_16.outcome_time"
+        ]
+      },
+      "observed": [
+        "Was attacked while vulnerable during looting and returned fire.",
+        "The source shows a won_cluster outcome."
+      ],
+      "inferred": [
+        "At Cement Plant interior ambush, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "When loot gets you attacked, stop sorting immediately, use the nearest cover, and solve the closest shooter first.",
+      "realistic_alternative": {
+        "action": "At Cement Plant interior ambush, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Loot can wait; cover and aim cannot.",
+      "drill": {
+        "name": "Loot Vs Safety drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_19_lesson",
+      "source_fight_id": "fight_19",
+      "lesson_type": "position",
+      "novelty_label": "new_lesson",
+      "progression_note": "positive_progression",
+      "goal_relation": "optional_ai_cluster_connective_success",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 2922.0,
+        "description": "Aggression works here because the targets are split; check whether the next target has a clear gun line before chaining the push.",
+        "evidence_refs": [
+          "fight_19.decision_time",
+          "fight_19.outcome_time"
+        ]
+      },
+      "observed": [
+        "Entered a yard with multiple guards and used aggressive movement to close distance.",
+        "The source shows a won_cluster outcome."
+      ],
+      "inferred": [
+        "At Major Substation yard, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "Aggression works here because the targets are split; check whether the next target has a clear gun line before chaining the push.",
+      "realistic_alternative": {
+        "action": "At Major Substation yard, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "After a fast kill, change the lane.",
+      "drill": {
+        "name": "Movement And Target Split drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_21_lesson",
+      "source_fight_id": "fight_21",
+      "lesson_type": "position",
+      "novelty_label": "new_lesson",
+      "progression_note": "micro_bridge",
+      "goal_relation": "optional_isolated_finish_before_rotation",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 3100.0,
+        "description": "The close-range commit was justified by surprise; after the kill, heal and leave instead of turning the win into a loot pause.",
+        "evidence_refs": [
+          "fight_21.decision_time",
+          "fight_21.outcome_time"
+        ]
+      },
+      "observed": [
+        "Had surprise on a nearby red-clad enemy while moving through grass.",
+        "The source shows a won outcome."
+      ],
+      "inferred": [
+        "At Visitor Center grass near rock, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "The close-range commit was justified by surprise; after the kill, heal and leave instead of turning the win into a loot pause.",
+      "realistic_alternative": {
+        "action": "At Visitor Center grass near rock, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "A clean kill is permission to leave.",
+      "drill": {
+        "name": "Surprise And Rotation drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_23_lesson",
+      "source_fight_id": "fight_23",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "new_lesson",
+      "progression_note": "different_close_range_version",
+      "goal_relation": "loot_interruption_close_threat",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 3603.0,
+        "description": "The emergency knife draw saved the close-range moment; the improvement is moving toward a corner before returning to loot.",
+        "evidence_refs": [
+          "fight_23.decision_time",
+          "fight_23.outcome_time"
+        ]
+      },
+      "observed": [
+        "Was looting when an enemy appeared at the container corner.",
+        "The source shows a won outcome."
+      ],
+      "inferred": [
+        "At Container yard surprise contact, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "The emergency knife draw saved the close-range moment; the improvement is moving toward a corner before returning to loot.",
+      "realistic_alternative": {
+        "action": "At Container yard surprise contact, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "After emergency melee, move before looting.",
+      "drill": {
+        "name": "Emergency Melee And Reset drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_24_lesson",
+      "source_fight_id": "fight_24",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "progression",
+      "progression_note": "positive_survival_progression",
+      "goal_relation": "extraction_preserving_escape",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 3812.0,
+        "description": "This is a successful survival decision: break the line first, heal second, and do not chase a fight that threatens the extraction goal.",
+        "evidence_refs": [
+          "fight_24.decision_time",
+          "fight_24.outcome_time"
+        ]
+      },
+      "observed": [
+        "Took damage from a hidden enemy and knew the direction but was out of position.",
+        "The source shows a escaped outcome."
+      ],
+      "inferred": [
+        "At Container yard hidden enemy, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "This is a successful survival decision: break the line first, heal second, and do not chase a fight that threatens the extraction goal.",
+      "realistic_alternative": {
+        "action": "At Container yard hidden enemy, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "A safe escape protects the extraction goal.",
+      "drill": {
+        "name": "Loot Preservation drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_25_lesson",
+      "source_fight_id": "fight_25",
+      "lesson_type": "position",
+      "novelty_label": "new_lesson",
+      "progression_note": "new_cover_chain",
+      "goal_relation": "forced_squad_cluster",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 3873.0,
+        "description": "Keep this as one cluster: smoke opened the entry, then each target was solved from a new piece of cover rather than treated as a separate fight.",
+        "evidence_refs": [
+          "fight_25.decision_time",
+          "fight_25.outcome_time"
+        ]
+      },
+      "observed": [
+        "Used smoke and actively hunted a known squad through connected positions.",
+        "The source shows a won_cluster outcome."
+      ],
+      "inferred": [
+        "At Dam interior stair and crate lane, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "Keep this as one cluster: smoke opened the entry, then each target was solved from a new piece of cover rather than treated as a separate fight.",
+      "realistic_alternative": {
+        "action": "At Dam interior stair and crate lane, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Smoke hides you; new cover keeps you alive.",
+      "drill": {
+        "name": "Smoke And Cover Chain drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_26_lesson",
+      "source_fight_id": "fight_26",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "model_success",
+      "progression_note": "new_best_example",
+      "goal_relation": "model_success_protected_loot_route",
+      "review_depth": "deep",
+      "decision_point": {
+        "source_time": 3912.0,
+        "description": "This is the session\u2019s best success example: height, target order, and controlled bursts protected both the fight and the loot route.",
+        "evidence_refs": [
+          "fight_26.decision_time",
+          "fight_26.outcome_time"
+        ]
+      },
+      "observed": [
+        "Had awareness of several enemy positions and controlled the engagement from height.",
+        "The source shows a squad_wipe outcome."
+      ],
+      "inferred": [
+        "At Dam interior elevated platform, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "This is the session\u2019s best success example: height, target order, and controlled bursts protected both the fight and the loot route.",
+      "realistic_alternative": {
+        "action": "At Dam interior elevated platform, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Use height for target order, not panic shots.",
+      "drill": {
+        "name": "Positioning Target Order drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_27_lesson",
+      "source_fight_id": "fight_27",
+      "lesson_type": "position",
+      "novelty_label": "new_lesson",
+      "progression_note": "new_information_skill",
+      "goal_relation": "forced_audio_contact",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 4616.0,
+        "description": "Audio information created the advantage; hold the crosshair at the likely head height before the corner appears.",
+        "evidence_refs": [
+          "fight_27.decision_time",
+          "fight_27.outcome_time"
+        ]
+      },
+      "observed": [
+        "Heard footsteps before rounding the corner.",
+        "The source shows a won outcome."
+      ],
+      "inferred": [
+        "At Administrative hallway, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "Audio information created the advantage; hold the crosshair at the likely head height before the corner appears.",
+      "realistic_alternative": {
+        "action": "At Administrative hallway, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Let footsteps set the crosshair.",
+      "drill": {
+        "name": "Audio And Crosshair drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    },
+    {
+      "lesson_id": "fight_28_lesson",
+      "source_fight_id": "fight_28",
+      "lesson_type": "goal_tradeoff",
+      "novelty_label": "new_lesson",
+      "progression_note": "extraction_endgame",
+      "goal_relation": "forced_extraction_route_contact",
+      "review_depth": "standard",
+      "decision_point": {
+        "source_time": 4903.0,
+        "description": "The late fight was forced by proximity to the extraction route; win quickly, heal, and keep the route moving toward extraction.",
+        "evidence_refs": [
+          "fight_28.decision_time",
+          "fight_28.outcome_time"
+        ]
+      },
+      "observed": [
+        "Saw an enemy operator in the open while moving toward extraction.",
+        "The source shows a won outcome."
+      ],
+      "inferred": [
+        "At Road near Visitor Center extraction route, the lesson likely changes the player\u2019s options; verify the exact geometry against the source."
+      ],
+      "unknown": [
+        "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+      ],
+      "what_helped": "The player\u2019s response to the immediate threat is preserved as evidence, even when the outcome is unfavorable.",
+      "what_hurt": "The late fight was forced by proximity to the extraction route; win quickly, heal, and keep the route moving toward extraction.",
+      "realistic_alternative": {
+        "action": "At Road near Visitor Center extraction route, apply the scene lesson and use the visible reset, route, target order, or timing that the source supports.",
+        "tradeoff": "This may give up speed, loot access, or the current angle in exchange for more control.",
+        "likely_benefit": "This could preserve health, aim time, or the route toward extraction; it cannot guarantee a different result.",
+        "unknowns": [
+          "Enemy intent and any off-screen teammate position are unknown unless directly visible or audible."
+        ]
+      },
+      "next_game_cue": "Near extraction, finish fast and keep moving.",
+      "drill": {
+        "name": "Extraction Risk drill",
+        "trigger": "The same visible threat or decision pattern appears.",
+        "action": "Apply the specific cue at the first controllable moment.",
+        "success_condition": "Complete the cue before taking the next unnecessary exposure in three relevant fights.",
+        "scope": "Next three fights"
+      }
+    }
+  ]
+}

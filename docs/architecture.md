@@ -24,6 +24,9 @@ source --> source_manifest.json --> raw_candidate_inventory.json
                      contextual_coaching_map.json
                                       |
                                       v
+                 teaching_lessons.json + lesson ledger
+                                      |
+                                      v
                          episode_script.json
                                       |
                                       v
@@ -47,6 +50,7 @@ source --> source_manifest.json --> raw_candidate_inventory.json
 | Context resolver | Promote only interaction-plus-consequence events and cluster tactical episodes | `context-aware-fight-detector` deterministic resolver |
 | Session coach | Aggregate patterns and rank up to three priorities | LLM or structured analyst |
 | Edit selector | Choose scenes by goal relevance and novelty | Rule-based filter plus analyst confirmation |
+| Teaching engine | Convert each selected fight into a local lesson, alternative, progression label, cue, and measurable drill | `teaching-engine` skill plus lesson validator |
 | Script writer | Build question-first reviews with evidence classes | LLM constrained by JSON schema |
 | Composer | Render source clips, rewinds, stills, labels, and narration | HyperFrames plus FFmpeg fallback |
 | QC | Audit temporal order, coaching specificity, repetition, audio, and mechanical integrity | Four human-watch roles plus scripts |
@@ -62,7 +66,7 @@ Large files remain outside Git. A deployment may use local storage, an object st
 
 Evidence is attached to events, fights, claims, and visual annotations. A source frame or audio cue can support an `observed` claim. A tactical conclusion derived from visible geometry is `inferred`. Off-screen enemy intent, hidden teammates, and guaranteed counterfactual outcomes are `unknown` unless later evidence establishes them.
 
-The profile is a calibration input, while the match goal is a decision-policy input. They must remain separate in the artifact graph and in prompts. The resolver is deliberately conservative. A raw candidate can contain a live target or a danger signal, but the final fight list requires a combat interaction and a combat consequence. Negative events are not thrown away: they become part of the audit trail and regression fixtures.
+The profile is a calibration input, while the match goal is a decision-policy input. They must remain separate in the artifact graph and in prompts. The teaching engine consumes both, but the profile only changes vocabulary, depth, and drills; it never changes what the source proves. The resolver is deliberately conservative. A raw candidate can contain a live target or a danger signal, but the final fight list requires a combat interaction and a combat consequence. Negative events are not thrown away: they become part of the audit trail and regression fixtures.
 
 ## Rendering model
 
