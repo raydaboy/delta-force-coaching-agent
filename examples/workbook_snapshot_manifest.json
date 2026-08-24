@@ -1,0 +1,11 @@
+{
+  "snapshots": [
+    {
+      "id": "example_scan_warning",
+      "timestamp": 124.0,
+      "callouts": [
+        {"label": "EXPOSURE WARNING", "target": [0.5, 0.18], "origin": [0.68, 0.12], "evidence_class": "OBSERVED"}
+      ]
+    }
+  ]
+}

@@ -21,6 +21,7 @@ Read this file first. If no player profile exists, offer the optional profile qu
 9. Keep coaching specific. Use the teaching-engine contract: identify the goal conflict, turning point, what helped, what hurt, a local realistic alternative, the trade-off, one next-game cue, and a measurable drill. Reject any alternative that could be pasted into another fight unchanged.
 10. Do not use memes, stickers, reaction graphics, decorative overlays, downloaded footage, or copyrighted inserts in pure-gameplay mode.
 11. A technical pass does not replace a human-watch pass. Run temporal context, coaching usefulness, session-memory/repetition, and final audio/pacing reviews on the rendered MP4 itself.
+12. When the user requests a printable session document, generate the optional Session Workbook & Tactical Playbook only from approved lessons and a local snapshot manifest. Validate source windows, evidence classes, local alternatives, cues, drills, and snapshot references before rendering. Keep source video, extracted snapshots, and generated PDFs outside Git.
 
 ## Player-profile policy
 
@@ -49,6 +50,7 @@ A complete run must produce at least the following files:
 | `scene_manifest.json` | Render order, clip paths, visual lifetimes, audio timing |
 | `final_qc_report.json` | Human-watch findings, technical measurements, severity, corrections, recheck |
 | Final MP4 | H.264/AAC, measured loudness, true peak below target, no stale overlays |
+| Optional `session_workbook.json` | Printable training-workbook/playbook input containing selected lessons, reflection prompts, next-session rules, practice plan, and source-linked snapshot IDs |
 
 ## Failure handling
 

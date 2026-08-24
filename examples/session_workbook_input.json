@@ -1,0 +1,30 @@
+{
+  "title": "Example Session Workbook & Tactical Playbook",
+  "player_goal": "Protect valuable loot and extract; win only forced close threats.",
+  "session_summary": {"narrative": "This sanitized example shows how a coaching run becomes a compact player workbook. Replace all fields with validated local-session evidence before rendering."},
+  "strengths": [
+    {"title": "Reset discipline", "evidence": "The player breaks a visible firing lane before repairing damage.", "why_keep": "It preserves a later decision instead of feeding the original angle."}
+  ],
+  "priorities": [
+    {"title": "Information changes the route", "pattern": "A visible exposure warning is followed by continued direct travel.", "rule": "Break to visible cover before committing to the duel."}
+  ],
+  "lessons": [
+    {
+      "lesson_id": "example_scan_reset",
+      "title": "A warning must change the route",
+      "source_window": {"start": 120.0, "decision": 124.0, "outcome": 132.0, "end": 138.0},
+      "snapshot_id": "example_scan_warning",
+      "observed": ["An exposure warning is visible before first contact."],
+      "inferred": ["Continuing straight increases the chance of taking the first open fight."],
+      "unknown": ["The source does not prove the scan origin or enemy count."],
+      "decision_point": "The player continued forward after the warning instead of using the visible cover break.",
+      "alternative": {"action": "Break to the visible wall edge, stop sprinting, and identify one firing lane before returning fire.", "tradeoff": "This gives up a few seconds of tempo.", "likely_benefit": "It could preserve a better first shot and a reset option."},
+      "cue": "Scan: cover before gun.",
+      "drill": {"trigger": "Any scan or exposure warning.", "action": "Name one visible cover break before shooting.", "success_condition": "The player stops direct travel before the first shot in three forced contacts.", "scope": "Next three forced fights."},
+      "reflection_prompt": "Which visible object was the nearest cover break, and what trade-off did it create?"
+    }
+  ],
+  "next_session_rules": [{"trigger": "Scan or exposure warning", "action": "Cover first, then choose the duel or rotate."}],
+  "practice_plan": [{"name": "Three-second security check", "instruction": "After a kill, identify the last firing lane and nearest entrance before opening a body or inventory screen.", "measurement": "Complete this on the next three loot opportunities."}],
+  "evidence_limits": ["This is a sanitized example; it does not contain a real recording or real-session screenshot.", "Unseen enemy intent and hidden geometry remain UNKNOWN."]
+}

@@ -1,0 +1,10 @@
+{
+  "entry": "main.typ",
+  "metadata": {
+    "author": "Manus AI",
+    "subtitle": "Private, evidence-first gameplay training document",
+    "title": "Session Workbook & Tactical Playbook"
+  },
+  "mode": "report",
+  "theme": "report-theme.typ"
+}

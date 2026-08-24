@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Session Workbook and Tactical Playbook",
+  "type": "object",
+  "required": ["title", "player_goal", "session_summary", "strengths", "priorities", "lessons", "next_session_rules", "practice_plan", "evidence_limits"],
+  "properties": {
+    "title": {"type": "string", "minLength": 3},
+    "player_goal": {"type": "string", "minLength": 3},
+    "session_summary": {"type": "object"},
+    "strengths": {"type": "array", "minItems": 1},
+    "priorities": {"type": "array", "minItems": 1, "maxItems": 3},
+    "lessons": {"type": "array", "minItems": 1, "maxItems": 6},
+    "next_session_rules": {"type": "array", "minItems": 1, "maxItems": 3},
+    "practice_plan": {"type": "array", "minItems": 1},
+    "evidence_limits": {"type": "array", "minItems": 1}
+  }
+}

@@ -30,6 +30,7 @@ The result is not a montage of raw combat. It is a structured coaching session t
 | Teaching engine | Produces a local turning point, what helped, what hurt, realistic alternative, trade-off, novelty label, cue, and measurable drill. |
 | Interactive script | Shows complete action and outcome before the question, rewind, evidence reveal, and alternative. |
 | Evidence discipline | Labels claims as `observed`, `inferred`, or `unknown`; never invents enemy intent or guaranteed counterfactuals. |
+| Session workbook/playbook | Builds a printable tactical playbook and training workbook with selected local snapshots, evidence stacks, drills, reflection prompts, and next-session rules. |
 | Human-watch QC contract | Treats temporal context, coaching usefulness, repetition, and audio/pacing as separate release gates. |
 
 ## Pipeline at a glance
@@ -90,6 +91,7 @@ skills/
 scripts/                          Deterministic CLI builders and validators
 schemas/                          JSON contracts for goals, profiles, events, and lessons
 templates/                        Goal and player-profile questionnaires
+templates/workbook_typst_base/     Portable Typst base for private training PDFs
 examples/                         Inspectable artifacts from a real Delta Force session
 configs/                          Local and deployment defaults
 deploy/                           Container worker and Compose configuration
@@ -145,6 +147,34 @@ python3 scripts/validate_pipeline.py --workdir work
 ```
 
 The generic repository render command creates a scene handoff manifest. Connect a verified HyperFrames/FFmpeg or Kinocut adapter for the actual media export; the agent must record the backend that truly ran.
+
+## Build a session workbook & tactical playbook
+
+The optional PDF subsystem turns an **approved**, source-specific coaching map into a printable hybrid training workbook and tactical playbook. It is designed for the player to read away from the video: selected evidence snapshots, decision explanations, local alternatives, trade-offs, drills, reflection prompts, and a three-rule next-session plan.
+
+The PDF uses a local Typst installation. Keep the source, extracted snapshots, build directory, and PDF outside Git. The repository includes only the renderer, schema, sanitized examples, and portable Typst base.
+
+```bash
+# Build a private snapshot manifest from your approved lessons first.
+python3 scripts/extract_workbook_snapshots.py \
+  --source /private/source.mp4 \
+  --manifest /private/run/artifacts/workbook_snapshot_manifest.json \
+  --output-dir /private/run/workbook/snapshots
+
+# Reject generic, unsupported, or incomplete lessons before rendering.
+python3 scripts/validate_session_workbook.py \
+  /private/run/artifacts/session_workbook.json \
+  --snapshot-manifest /private/run/workbook/snapshots/workbook_snapshot_manifest.json \
+  --require-snapshot-files
+
+# Render the private PDF and build manifest.
+python3 scripts/render_session_workbook.py \
+  --input /private/run/artifacts/session_workbook.json \
+  --snapshot-manifest /private/run/workbook/snapshots/workbook_snapshot_manifest.json \
+  --output-dir /private/run/workbook/output
+```
+
+See [`docs/session_workbook_playbook.md`](docs/session_workbook_playbook.md) for the complete contract and page design. A PDF build is a document-rendering stage only; it does not replace evidence validation, video QC, or independent human review.
 
 ## Validation
 
