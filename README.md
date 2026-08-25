@@ -76,6 +76,8 @@ The system tracks memory across the session using `new_lesson`, `progression`, `
 
 The player profile personalizes teaching but never overrides evidence. A beginner receives one landmark and one action. An intermediate player receives timing, target order, and resource trade-offs. An advanced player can receive conditional branches and opponent-response checks. All levels get a plain-language first sentence.
 
+For a player-facing quick reference after a session, use the mandatory [`Standard Tactical Playbook Format`](docs/tactical_playbook_standard.md). It turns approved lessons into a goal-aware match objective, strengths, primary adjustments, scenario rules, core operating rules, measurable drills, and visible evidence limits. See the sanitized [`Delta Force extraction example`](examples/delta_force_extraction_tactical_playbook.md).
+
 ## Repository layout
 
 ```text

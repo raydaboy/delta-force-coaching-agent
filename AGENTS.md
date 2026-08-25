@@ -22,6 +22,7 @@ Read this file first. If no player profile exists, offer the optional profile qu
 10. Do not use memes, stickers, reaction graphics, decorative overlays, downloaded footage, or copyrighted inserts in pure-gameplay mode.
 11. A technical pass does not replace a human-watch pass. Run temporal context, coaching usefulness, session-memory/repetition, and final audio/pacing reviews on the rendered MP4 itself.
 12. When the user requests a printable session document, generate the optional Session Workbook & Tactical Playbook only from approved lessons and a local snapshot manifest. Validate source windows, evidence classes, local alternatives, cues, drills, and snapshot references before rendering. Keep source video, extracted snapshots, and generated PDFs outside Git.
+13. When the user requests a player-facing tactical summary, write it in the standard format at `docs/tactical_playbook_standard.md`: Match Objective, Match Overview, Key Strengths, Primary Adjustments, scenario-based Tactical Decision Breakdown, Core Rules & Practice Plan, and Evidence Limits. Preserve `OBSERVED`, `INFERRED`, and `UNKNOWN` when the source has uncertainty.
 
 ## Player-profile policy
 
@@ -51,6 +52,7 @@ A complete run must produce at least the following files:
 | `final_qc_report.json` | Human-watch findings, technical measurements, severity, corrections, recheck |
 | Final MP4 | H.264/AAC, measured loudness, true peak below target, no stale overlays |
 | Optional `session_workbook.json` | Printable training-workbook/playbook input containing selected lessons, reflection prompts, next-session rules, practice plan, and source-linked snapshot IDs |
+| Optional `tactical_playbook.md` | Fast player reference using the standard objective, strengths, adjustments, scenario rules, drills, and evidence-limits format |
 
 ## Failure handling
 
