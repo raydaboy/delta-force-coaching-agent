@@ -21,7 +21,7 @@ def main():
     cmap=json.loads(cmap_path.read_text()); selected=cmap.get('selected_fights',[])
     if args.dry_run:
         backend='dry-run'
-    elif args.backend in {'kinocut','hyperframes_ffmpeg','diffusionstudio'}:
+    elif args.backend in {'kinocut','hyperframes_ffmpeg','diffusionstudio','ffmpeg'}:
         backend=args.backend
     else:  # auto
         backend='kinocut' if shutil.which('kino') else 'hyperframes_ffmpeg'
